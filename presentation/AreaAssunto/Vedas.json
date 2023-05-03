@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Vedas",
+    "presentationColumns" : [ {
+      "name" : "ID de Produto",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.PROD_ID"
+    }, {
+      "name" : "ID de Cliente",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.CUST_ID"
+    }, {
+      "name" : "ID de Tempo",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.TIME_ID"
+    }, {
+      "name" : "ID de Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.CHANNEL_ID"
+    }, {
+      "name" : "ID de Promoção",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.PROMO_ID"
+    }, {
+      "name" : "Quantidade Vendida",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.QUANTITY_SOLD"
+    }, {
+      "name" : "Valor Vendido (R$)",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.AMOUNT_SOLD"
+    }, {
+      "name" : "Preço Médio",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.SALES.AVERAGE_PRICE"
+    } ]
+  }
+}

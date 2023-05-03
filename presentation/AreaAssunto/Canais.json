@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Canais",
+    "presentationColumns" : [ {
+      "name" : "ID do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_ID"
+    }, {
+      "name" : "Descrição do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_DESC"
+    }, {
+      "name" : "Classe do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_CLASS"
+    }, {
+      "name" : "ID de Classe do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_CLASS_ID"
+    }, {
+      "name" : "Total do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_TOTAL"
+    }, {
+      "name" : "ID de Total do Canal",
+      "sourceLogicalColumn" : "logicalColumn:ModNegocios.CHANNELS.CHANNEL_TOTAL_ID"
+    } ]
+  }
+}

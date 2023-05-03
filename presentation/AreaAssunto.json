@@ -1,0 +1,25 @@
+{
+  "subjectArea" : {
+    "name" : "AreaAssunto",
+    "sourceBusinessModel" : "businessModel:ModNegocios",
+    "tableOrder" : [ {
+      "name" : "presentationTable:AreaAssunto.Canais"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Países"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Clientes"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Produtos"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Promocões"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Vedas"
+    }, {
+      "name" : "presentationTable:AreaAssunto.Tempo"
+    } ],
+    "permissions" : [ {
+      "accessor" : "role:DVConsumer",
+      "access" : "READ"
+    } ]
+  }
+}

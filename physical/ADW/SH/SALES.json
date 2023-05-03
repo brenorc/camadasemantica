@@ -1,0 +1,82 @@
+{
+  "physicalTable" : {
+    "name" : "SALES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PROD_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "TIME_ID",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "QUANTITY_SOLD",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "AMOUNT_SOLD",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:ADW.SH.CHANNELS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADW.SH.SALES.CHANNEL_ID",
+        "rightColumn" : "physicalColumn:ADW.SH.CHANNELS.CHANNEL_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADW.SH.CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADW.SH.SALES.CUST_ID",
+        "rightColumn" : "physicalColumn:ADW.SH.CUSTOMERS.CUST_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADW.SH.PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADW.SH.SALES.PROD_ID",
+        "rightColumn" : "physicalColumn:ADW.SH.PRODUCTS.PROD_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADW.SH.PROMOTIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADW.SH.SALES.PROMO_ID",
+        "rightColumn" : "physicalColumn:ADW.SH.PROMOTIONS.PROMO_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADW.SH.TIMES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADW.SH.SALES.TIME_ID",
+        "rightColumn" : "physicalColumn:ADW.SH.TIMES.TIME_ID"
+      } ]
+    } ]
+  }
+}
